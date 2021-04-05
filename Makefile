@@ -9,7 +9,13 @@ install-deb:
 	echo 'export GEM_HOME="$$HOME/gems"' >> ~/.bashrc && \
 	echo 'export PATH="$$HOME/gems/bin:$$PATH"' >> ~/.bashrc && \
 	sudo gem install jekyll bundler redcarpet
-	bundle install 
+	bundle install
+
+install-ios:
+	brew install ruby && \
+	echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"' >> ~/.zshrc && \
+	gem install jekyll bundler redcarpet && \
+	bundle install
 
 build:
 	bundle exec jekyll build
