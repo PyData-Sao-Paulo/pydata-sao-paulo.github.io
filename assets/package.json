@@ -30,6 +30,6 @@
     "gulp-webp": "^4.0.1"
   },
   "dependencies": {
-    "set-value": ">=2.0.1"
+    "set-value": ">=4.0.1"
   }
 }
